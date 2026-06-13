@@ -59,18 +59,18 @@ function Hero() {
           <p className="mt-8 max-w-md text-lg text-muted-foreground leading-relaxed">
             Gediplomeerd specialist in doodle, pluk en wolvachten.
           </p>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-row flex-nowrap gap-3">
             <a
               href="https://wa.me/31642618286"
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-2 rounded-full bg-bark text-cream px-7 py-3.5 text-sm hover:bg-terracotta transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-bark text-cream px-5 sm:px-7 py-3.5 text-sm whitespace-nowrap hover:bg-terracotta transition-colors"
             >
-              Afspraak via WhatsApp <span aria-hidden>→</span>
+              WhatsApp <span aria-hidden>→</span>
             </a>
             <Link
               to="/behandelingen"
-              className="inline-flex items-center gap-2 rounded-full border border-bark/30 text-bark px-7 py-3.5 text-sm hover:bg-bark/5 transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-bark/30 text-bark px-5 sm:px-7 py-3.5 text-sm whitespace-nowrap hover:bg-bark/5 transition-colors"
             >
               Bekijk behandelingen
             </Link>
