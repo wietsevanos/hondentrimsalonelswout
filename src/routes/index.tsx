@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import heroImg from "@/assets/hero-bichon.png.asset.json";
+import heroImg from "@/assets/hero-doodle-brown.png.asset.json";
 import salonImg from "@/assets/salon-interior.jpg";
 import berneImg from "@/assets/portrait-bernedoodle.jpg";
 import pomImg from "@/assets/portrait-pomeranian.jpg";
