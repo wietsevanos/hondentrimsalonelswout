@@ -80,6 +80,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#f7f1e6" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "Hondentrimsalon Elswout offers premium dog grooming services, specializing in coat health and expert care." },
+      { property: "og:description", content: "Hondentrimsalon Elswout offers premium dog grooming services, specializing in coat health and expert care." },
+      { name: "twitter:description", content: "Hondentrimsalon Elswout offers premium dog grooming services, specializing in coat health and expert care." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c045e88-a310-420e-a104-cedcb10efcf6/id-preview-2bd54cb9--18b72153-dee0-4115-b90f-4d3587aec4ca.lovable.app-1781393488453.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c045e88-a310-420e-a104-cedcb10efcf6/id-preview-2bd54cb9--18b72153-dee0-4115-b90f-4d3587aec4ca.lovable.app-1781393488453.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       {
