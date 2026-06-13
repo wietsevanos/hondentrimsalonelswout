@@ -28,6 +28,7 @@ function Contact() {
         eyebrow="Contact & afspraak"
         title={<>Een afspraak begint met een <span className="italic-serif text-terracotta">korte boodschap</span>.</>}
         intro="Vanwege de drukte zijn wij telefonisch lastig bereikbaar. Een WhatsApp is veruit de snelste manier."
+        align="center"
       />
 
       <section className="container-x mx-auto max-w-5xl mt-16">
@@ -58,7 +59,7 @@ function Contact() {
       </section>
 
       <section className="container-x mx-auto max-w-5xl mt-32">
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-24 text-center md:text-left">
           <Reveal>
             <div className="eyebrow mb-5">Bezoek ons</div>
             <address className="not-italic font-serif text-3xl text-bark leading-snug">
