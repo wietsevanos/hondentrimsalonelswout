@@ -5,9 +5,10 @@ interface RevealProps {
   delay?: 0 | 1 | 2 | 3 | 4;
   as?: "div" | "section" | "article" | "li" | "header";
   className?: string;
+  id?: string;
 }
 
-export function Reveal({ children, delay = 0, as = "div", className = "" }: RevealProps) {
+export function Reveal({ children, delay = 0, as = "div", className = "", id }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ export function Reveal({ children, delay = 0, as = "div", className = "" }: Reve
   const Tag = as as React.ElementType;
   const delayClass = delay ? `reveal-delay-${delay}` : "";
   return (
-    <Tag ref={ref as never} className={`reveal ${delayClass} ${className}`.trim()}>
+    <Tag ref={ref as never} id={id} className={`reveal ${delayClass} ${className}`.trim()}>
       {children}
     </Tag>
   );
