@@ -4,9 +4,23 @@ interface Props {
   eyebrow: string;
   title: ReactNode;
   intro?: ReactNode;
+  align?: "left" | "center";
 }
 
-export function PageHero({ eyebrow, title, intro }: Props) {
+export function PageHero({ eyebrow, title, intro, align = "left" }: Props) {
+  if (align === "center") {
+    return (
+      <section className="container-x mx-auto max-w-3xl pt-12 lg:pt-24 text-center animate-fade-up">
+        <div className="eyebrow mb-6">{eyebrow}</div>
+        <h1 className="font-serif text-bark text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight">
+          {title}
+        </h1>
+        {intro ? (
+          <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">{intro}</p>
+        ) : null}
+      </section>
+    );
+  }
   return (
     <section className="container-x mx-auto max-w-7xl pt-12 lg:pt-24">
       <div className="grid md:grid-cols-12 gap-10 items-end animate-fade-up">
