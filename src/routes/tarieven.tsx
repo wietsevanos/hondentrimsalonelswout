@@ -23,7 +23,7 @@ export const Route = createFileRoute("/tarieven")({
 });
 
 const RATES = [
-  { t: "Korte behandeling", d: "Ca. 1 uur — voor kleine of goed verzorgde vachten.", p: "€ 65,00" },
+  { t: "Korte behandeling", d: "Ca. 1 uur, voor kleine of goed verzorgde vachten.", p: "€ 65,00" },
   { t: "Standaard vachtbehandeling", d: "Wassen, drogen, modelleren en eindcheck.", p: "€ 65,00 / uur" },
   { t: "Plukvachten (handgeplukt)", d: "Ruwharige rassen, op originele wijze handgeplukt.", p: "€ 72,50 / uur" },
   { t: "Behandeling medische indicatie", d: "In opvolging van advies dierenarts, hypoallergeen.", p: "€ 72,50 / uur" },
@@ -33,7 +33,7 @@ const RATES = [
 const TERMS = [
   "Alle prijzen zijn inclusief 21% BTW en gelden voor een goed verzorgde hond.",
   "Meerwerk door klitten, gedrag, parasieten of vervilting wordt extra berekend.",
-  "De duur van een behandeling is niet vooraf vast te stellen — de vacht kan meer aandacht vragen dan verwacht.",
+  "De duur van een behandeling is niet vooraf vast te stellen, de vacht kan meer aandacht vragen dan verwacht.",
   "Een vachtbehandeling omvat altijd een complete behandeling inclusief wassen en drogen.",
   "Niet alleen de vacht, maar ook huid, nagels en oren worden behandeld.",
   "Bij teken of parasieten volgt directe behandeling (extra kosten).",
@@ -45,7 +45,7 @@ function Tarieven() {
     <>
       <PageHero
         eyebrow="Tarieven"
-        title={<>Eerlijke <span className="italic-serif text-terracotta">uurtarieven</span> — geen verrassingen.</>}
+        title={<>Eerlijke <span className="italic-serif text-terracotta">uurtarieven</span>, geen verrassingen.</>}
         intro="Wij werken met transparante uurtarieven. Wat een behandeling kost, hangt af van het vachttype en de toestand van de vacht."
       />
 

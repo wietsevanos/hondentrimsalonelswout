@@ -27,16 +27,16 @@ export const Route = createFileRoute("/behandelingen")({
 const TREATMENTS = [
   { t: "Wassen & drogen", d: "Twee wasbeurten met natuurlijke shampoo, gevolgd door drogen met een krachtige of zachte waterblazer afhankelijk van het vachttype." },
   { t: "Knippen & modelleren", d: "Vakkundig knippen en bijwerken naar het ras-specifieke of door jou gewenste model. Altijd in balans met wat de vacht aankan." },
-  { t: "Scheren", d: "Alleen wanneer het écht in het belang van de hond is — bij ernstige vervilting of medische indicatie." },
+  { t: "Scheren", d: "Alleen wanneer het écht in het belang van de hond is, bij ernstige vervilting of medische indicatie." },
   { t: "Handplukken", d: "Originele behandeling voor ruwharige rassen. Bevordert vachtgezondheid en behoudt de juiste structuur." },
   { t: "Ontwollen (wolvachten)", d: "Krachtige waterblazer verwijdert losse wol uit de dubbele vacht. Geen harken, geen coatking, geen scheren." },
   { t: "Anti-verharing behandeling", d: "Speciale was/blaastechniek voor kortharige rassen. Reduceert haaruitval thuis aanzienlijk." },
-  { t: "Behandeling allergische vacht", d: "Hypoallergene shampoos en gerichte verzorging — in overleg met de dierenarts indien medisch geïndiceerd." },
+  { t: "Behandeling allergische vacht", d: "Hypoallergene shampoos en gerichte verzorging, in overleg met de dierenarts indien medisch geïndiceerd." },
   { t: "Oren, nagels & voetzolen", d: "Standaard onderdeel van iedere behandeling. Oren reinigen, nagels knippen en haren onder de voetzolen weghalen." },
 ];
 
 const PROCESS = [
-  { n: "01", t: "Wennen", d: "Eerst kennismaken met de salon — de mensen, de geluiden, de andere honden. Pas dan begint de behandeling." },
+  { n: "01", t: "Wennen", d: "Eerst kennismaken met de salon, de mensen, de geluiden, de andere honden. Pas dan begint de behandeling." },
   { n: "02", t: "Borstelen & gezondheidscheck", d: "Doorkammen, klitten verwijderen, controle op teken, oneffenheden of bultjes." },
   { n: "03", t: "Bad", d: "Massage met shampoo, twee wasbeurten, grondig spoelen en drogen met een speciale Pet Towel." },
   { n: "04", t: "Pauze", d: "Even drinken, een snoepje, een aai." },
@@ -73,7 +73,7 @@ function Behandelingen() {
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Een behandeling is meer dan knippen. Het is een rustig proces in
-              zes stappen — zodat jouw hond ontspannen blijft en de vacht écht
+              zes stappen, zodat jouw hond ontspannen blijft en de vacht écht
               goed wordt teruggebracht.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">

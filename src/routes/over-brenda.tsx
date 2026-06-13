@@ -31,10 +31,10 @@ const TIMELINE = [
 ];
 
 const SPECS = [
-  "Plukvachten — op originele wijze handgeplukt",
-  "Wolvachten — ontwollen via was/blaastechniek",
+  "Plukvachten, op originele wijze handgeplukt",
+  "Wolvachten, ontwollen via was/blaastechniek",
   "Hypoallergene en allergische klachten",
-  "Doodlevachten — gecertificeerd specialist",
+  "Doodlevachten, gecertificeerd specialist",
 ];
 
 function OverBrenda() {
@@ -42,7 +42,7 @@ function OverBrenda() {
     <>
       <PageHero
         eyebrow="Wie is de trimster?"
-        title={<>Brenda — vakvrouw, <span className="italic-serif text-terracotta">dierenliefhebber</span>.</>}
+        title={<>Brenda, vakvrouw, <span className="italic-serif text-terracotta">dierenliefhebber</span>.</>}
       />
 
       <section className="container-x mx-auto max-w-7xl mt-16">
@@ -69,7 +69,7 @@ function OverBrenda() {
               </p>
               <p>
                 Die jaren legden de basis voor wat haar werk vandaag zo
-                bijzonder maakt: kennis van huid, vacht, voeding én gedrag —
+                bijzonder maakt: kennis van huid, vacht, voeding én gedrag , 
                 gecombineerd met internationale opleidingen in Bedford, Los
                 Angeles en Nederland.
               </p>
@@ -99,7 +99,7 @@ function OverBrenda() {
             <blockquote className="mt-14 border-l-2 border-terracotta pl-6 font-serif text-2xl md:text-3xl text-bark italic leading-snug">
               "Mijn liefde voor dieren en mijn werk met dieren maken dat mijn
               werk een cadeau is, iedere dag opnieuw."
-              <footer className="mt-4 not-italic font-sans text-sm tracking-wide text-muted-foreground">— Brenda van der Vaart</footer>
+              <footer className="mt-4 not-italic font-sans text-sm tracking-wide text-muted-foreground">,  Brenda van der Vaart</footer>
             </blockquote>
           </Reveal>
         </div>

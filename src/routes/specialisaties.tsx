@@ -66,7 +66,7 @@ const SPECS: Spec[] = [
     id: "groot",
     eyebrow: "Ruimte en geduld",
     title: "Grote rassen",
-    body: "Uitgebreide ervaring met grote en moeilijk handelbare honden — ook angstige of dominante. Speciale aandacht voor wolvachten en plukvachten van grote rassen.",
+    body: "Uitgebreide ervaring met grote en moeilijk handelbare honden, ook angstige of dominante. Speciale aandacht voor wolvachten en plukvachten van grote rassen.",
     bullets: ["Berner Sennen", "Bouvier", "Briard", "Golden Retriever", "Leonberger", "Pyrenese Berghond", "Riesenschnauzer", "Sint Bernard"],
     img: berner,
   },

@@ -129,7 +129,7 @@ function Welcome() {
             </p>
             <p>
               Iedere behandeling begint met aandacht. Eerst wennen, dan
-              behandelen — natuurlijk, persoonlijk en zonder haast. Ook angstige
+              behandelen, natuurlijk, persoonlijk en zonder haast. Ook angstige
               of nerveuze honden zijn bij ons in vertrouwde handen.
             </p>
           </div>
@@ -152,7 +152,7 @@ function Why() {
       <Reveal className="text-center max-w-2xl mx-auto">
         <div className="eyebrow mb-5">Waarom Elswout</div>
         <h2 className="font-serif text-bark text-4xl md:text-5xl leading-[1.05]">
-          Meer dan trimmen — een <span className="italic-serif text-terracotta">moment van zorg</span>.
+          Meer dan trimmen, een <span className="italic-serif text-terracotta">moment van zorg</span>.
         </h2>
       </Reveal>
       <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -171,7 +171,7 @@ function Why() {
 }
 
 const SPECS = [
-  { img: cavaImg, t: "Doodlevachten", d: "Labradoodle, Cobberdog, Bernedoodle, Cockapoo, Cavapoo — gecertificeerd." },
+  { img: cavaImg, t: "Doodlevachten", d: "Labradoodle, Cobberdog, Bernedoodle, Cockapoo, Cavapoo, gecertificeerd." },
   { img: bernerImg, t: "Wolvachten", d: "Husky, Samojeed, Berner Sennen, Leonberger. Ontwollen, nooit scheren." },
   { img: pomImg, t: "Pomeranian", d: "Begeleiding ugly fase, alopecia BSD en stimulering vachtgroei." },
   { img: berneImg, t: "Grote rassen", d: "Bouvier, Briard, Golden Retriever, Pyrenese Berghond en meer." },
@@ -219,11 +219,11 @@ function Specializations() {
 }
 
 const STEPS = [
-  { n: "01", t: "Wennen", d: "15–20 minuten kennismaken met de salon, de geluiden, de mensen." },
+  { n: "01", t: "Wennen", d: "15 tot 20 minuten kennismaken met de salon, de geluiden, de mensen." },
   { n: "02", t: "Borstelen & check", d: "Nauwkeurig borstelen, controle van huid, oren, nagels en eventuele oneffenheden." },
   { n: "03", t: "Wassen", d: "Massage met natuurlijke shampoo, twee wasbeurten en grondig uitspoelen." },
   { n: "04", t: "Drogen & ontwollen", d: "Krachtige of zachte waterblazer, afgestemd op het vachttype." },
-  { n: "05", t: "Modelleren", d: "Knippen, scheren, effileren of handplukken — wat de vacht echt nodig heeft." },
+  { n: "05", t: "Modelleren", d: "Knippen, scheren, effileren of handplukken, wat de vacht echt nodig heeft." },
   { n: "06", t: "Eindcheck", d: "Voetzolen, oren en nagels. Persoonlijk advies voor thuis." },
 ];
 
@@ -238,7 +238,7 @@ function Process() {
               Een behandeling in <span className="italic-serif text-terracotta">zes rustige stappen</span>.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Geen haast, geen kortere weg. Iedere stap is bewust — zodat jouw
+              Geen haast, geen kortere weg. Iedere stap is bewust, zodat jouw
               hond ontspannen blijft en de vacht in topconditie wordt teruggebracht.
             </p>
             <div className="mt-8 overflow-hidden rounded-2xl aspect-[5/4] bg-sand">
@@ -302,7 +302,7 @@ function BrendaTeaser() {
 const FAQ = [
   {
     q: "Hoe boek ik een afspraak?",
-    a: "Vanwege de drukte in salon en winkel heeft WhatsApp de voorkeur (06 42 61 82 86). Houd rekening met een wachttijd van ca. twee maanden — boek je vervolgafspraak direct door.",
+    a: "Vanwege de drukte in salon en winkel heeft WhatsApp de voorkeur (06 42 61 82 86). Houd rekening met een wachttijd van ca. twee maanden, boek je vervolgafspraak direct door.",
   },
   {
     q: "Waarom duurt een behandeling zo lang?",
@@ -314,7 +314,7 @@ const FAQ = [
   },
   {
     q: "Werken jullie met natuurlijke producten?",
-    a: "Ja. Wij gebruiken uitsluitend natuurlijke, hypoallergene verzorgingsproducten — geschikt voor allergische en gevoelige honden.",
+    a: "Ja. Wij gebruiken uitsluitend natuurlijke, hypoallergene verzorgingsproducten, geschikt voor allergische en gevoelige honden.",
   },
   {
     q: "Welke regio bedienen jullie?",

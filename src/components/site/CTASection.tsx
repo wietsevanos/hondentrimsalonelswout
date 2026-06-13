@@ -11,7 +11,7 @@ export function CTASection() {
           </h2>
           <p className="mt-6 text-cream/75 max-w-xl mx-auto">
             Vanwege de drukte heeft WhatsApp de voorkeur. Bekend in ons bestand?
-            Stuur direct een bericht — wij plannen graag een moment voor jouw hond in.
+            Stuur direct een bericht, wij plannen graag een moment voor jouw hond in.
           </p>
           <div className="mt-10 flex flex-wrap gap-4 justify-center">
             <a
@@ -30,7 +30,7 @@ export function CTASection() {
             </a>
           </div>
           <div className="mt-8 text-xs text-cream/60 tracking-wide">
-            Houd rekening met een wachttijd van ca. twee maanden — boek je vervolgafspraak direct door.
+            Houd rekening met een wachttijd van ca. twee maanden, boek je vervolgafspraak direct door.
           </div>
         </div>
       </Reveal>

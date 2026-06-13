@@ -27,7 +27,7 @@ function Contact() {
       <PageHero
         eyebrow="Contact & afspraak"
         title={<>Een afspraak begint met een <span className="italic-serif text-terracotta">korte boodschap</span>.</>}
-        intro="Vanwege de drukte in onze salon en winkel zijn wij telefonisch lastig bereikbaar. Stuur een WhatsApp — dat is veruit de snelste manier."
+        intro="Vanwege de drukte in onze salon en winkel zijn wij telefonisch lastig bereikbaar. Stuur een WhatsApp, dat is veruit de snelste manier."
       />
 
       <section className="container-x mx-auto max-w-7xl mt-24">
@@ -41,7 +41,7 @@ function Contact() {
               <p className="mt-6 text-cream/75 leading-relaxed max-w-md">
                 Bekend in ons bestand? Stuur een bericht. We plannen graag een
                 rustig moment in voor jouw hond. Houd rekening met een wachttijd
-                van ca. twee maanden — boek je vervolgafspraak direct door.
+                van ca. twee maanden, boek je vervolgafspraak direct door.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <a
@@ -79,11 +79,11 @@ function Contact() {
               <div className="mt-10 eyebrow mb-4">Openingstijden</div>
               <ul className="text-sm text-bark space-y-1.5">
                 <li className="flex justify-between"><span>Maandag</span><span className="text-muted-foreground">Gesloten</span></li>
-                <li className="flex justify-between"><span>Dinsdag</span><span className="text-muted-foreground">09:00 – 18:00</span></li>
-                <li className="flex justify-between"><span>Woensdag</span><span className="text-muted-foreground">09:00 – 18:00</span></li>
-                <li className="flex justify-between"><span>Donderdag</span><span className="text-muted-foreground">09:00 – 18:00</span></li>
-                <li className="flex justify-between"><span>Vrijdag</span><span className="text-muted-foreground">09:00 – 18:00</span></li>
-                <li className="flex justify-between"><span>Zaterdag</span><span className="text-muted-foreground">09:00 – 17:00</span></li>
+                <li className="flex justify-between"><span>Dinsdag</span><span className="text-muted-foreground">09:00 tot 18:00</span></li>
+                <li className="flex justify-between"><span>Woensdag</span><span className="text-muted-foreground">09:00 tot 18:00</span></li>
+                <li className="flex justify-between"><span>Donderdag</span><span className="text-muted-foreground">09:00 tot 18:00</span></li>
+                <li className="flex justify-between"><span>Vrijdag</span><span className="text-muted-foreground">09:00 tot 18:00</span></li>
+                <li className="flex justify-between"><span>Zaterdag</span><span className="text-muted-foreground">09:00 tot 17:00</span></li>
                 <li className="flex justify-between"><span>Zondag</span><span className="text-muted-foreground">Gesloten</span></li>
               </ul>
             </div>
