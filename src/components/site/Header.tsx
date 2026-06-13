@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/elswout-logo.png.asset.json";
 
 const NAV = [
   { to: "/over-ons", label: "Over ons" },
@@ -29,12 +30,21 @@ export function Header() {
       }`}
     >
       <div className="container-x mx-auto max-w-7xl flex items-center justify-between h-20">
-        <Link to="/" className="group flex flex-col leading-none" aria-label="Home">
-          <span className="font-serif text-[1.35rem] tracking-wide text-bark">
-            Elswout
-          </span>
-          <span className="text-[0.62rem] tracking-[0.32em] uppercase text-terracotta mt-0.5">
-            Hondentrimsalon
+        <Link to="/" className="group flex items-center gap-3" aria-label="Home">
+          <img
+            src={logo.url}
+            alt="Elswout"
+            width={44}
+            height={44}
+            className="h-11 w-11 object-contain transition-transform duration-500 group-hover:rotate-[-4deg]"
+          />
+          <span className="flex flex-col leading-none">
+            <span className="font-serif text-[1.35rem] tracking-wide text-bark">
+              Elswout
+            </span>
+            <span className="text-[0.62rem] tracking-[0.32em] uppercase text-terracotta mt-0.5">
+              Hondentrimsalon
+            </span>
           </span>
         </Link>
 
