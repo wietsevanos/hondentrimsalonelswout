@@ -30,18 +30,14 @@ function Contact() {
         intro="Vanwege de drukte zijn wij telefonisch lastig bereikbaar. Een WhatsApp is veruit de snelste manier."
       />
 
-      <section className="container-x mx-auto max-w-5xl mt-32">
+      <section className="container-x mx-auto max-w-5xl mt-16">
         <Reveal>
           <div className="text-center">
-            <div className="eyebrow mb-6">Boek je afspraak</div>
-            <h2 className="font-serif text-bark text-4xl md:text-5xl leading-[1.1] max-w-2xl mx-auto">
-              WhatsApp heeft de <span className="italic-serif text-terracotta">voorkeur</span>.
-            </h2>
-            <p className="mt-6 text-muted-foreground leading-relaxed max-w-xl mx-auto">
+            <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto">
               Bekend in ons bestand? Stuur een bericht. Houd rekening met een
               wachttijd van ca. twee maanden.
             </p>
-            <div className="mt-10 flex flex-wrap gap-3 justify-center">
+            <div className="mt-8 flex flex-wrap gap-3 justify-center">
               <a
                 href="https://wa.me/31642618286"
                 target="_blank"
