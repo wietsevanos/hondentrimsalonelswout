@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import heroImg from "@/assets/hero-doodle.jpg";
+import heroImg from "@/assets/hero-bichon.png.asset.json";
 import salonImg from "@/assets/salon-interior.jpg";
 import berneImg from "@/assets/portrait-bernedoodle.jpg";
 import pomImg from "@/assets/portrait-pomeranian.jpg";
@@ -80,10 +80,8 @@ function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-clay/40">
               <img
-                src={heroImg}
-                alt="Labradoodle wordt rustig geborsteld in trimsalon Elswout"
-                width={1600}
-                height={1152}
+                src={heroImg.url}
+                alt="Witte hond wordt rustig getrimd in trimsalon Elswout"
                 className="w-full h-full object-cover"
               />
             </div>
