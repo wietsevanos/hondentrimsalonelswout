@@ -38,12 +38,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <Welcome />
-      <Why />
       <Specializations />
-      <Process />
       <BrendaTeaser />
-      <Faq />
       <CTASection />
       <JsonLd />
     </>
@@ -60,9 +56,8 @@ function Hero() {
             Deskundige vachtverzorging,{" "}
             <span className="italic-serif text-terracotta">met liefde</span> voor je hond.
           </h1>
-          <p className="mt-8 max-w-lg text-lg text-muted-foreground leading-relaxed">
-            Gediplomeerd specialist in doodle-, pluk- en wolvachten. Rustig,
-            persoonlijk en altijd in het belang van jouw hond.
+          <p className="mt-8 max-w-md text-lg text-muted-foreground leading-relaxed">
+            Gediplomeerd specialist in doodle, pluk en wolvachten.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a
@@ -79,13 +74,6 @@ function Hero() {
             >
               Bekijk behandelingen
             </Link>
-          </div>
-          <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-            <span>Gediplomeerd</span>
-            <span>·</span>
-            <span>Paraveterinaire achtergrond</span>
-            <span>·</span>
-            <span>Natuurlijke producten</span>
           </div>
         </div>
         <div className="lg:col-span-6 animate-fade-in">
