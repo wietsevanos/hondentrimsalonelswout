@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import brenda from "@/assets/brenda-portrait.jpg";
+import brenda from "@/assets/brenda-shop.jpg.asset.json";
 
 const TITLE = "Over Brenda · Vachtspecialist Hondentrimsalon Elswout";
 const DESC =

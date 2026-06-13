@@ -7,7 +7,7 @@ import berneImg from "@/assets/portrait-bernedoodle.jpg";
 import pomImg from "@/assets/portrait-pomeranian.jpg";
 import cavaImg from "@/assets/portrait-cavapoo.jpg";
 import bernerImg from "@/assets/portrait-berner.jpg";
-import brendaImg from "@/assets/brenda-portrait.jpg";
+import brendaImg from "@/assets/brenda-shop.jpg.asset.json";
 
 const TITLE = "Hondentrimsalon Elswout · Premium vachtverzorging in Haarlem";
 const DESC =
