@@ -37,8 +37,8 @@ export function Footer() {
           <div className="eyebrow mb-4">Openingstijden</div>
           <ul className="text-sm text-bark space-y-1.5">
             <li className="flex justify-between"><span>Maandag</span><span className="text-muted-foreground">Gesloten</span></li>
-            <li className="flex justify-between"><span>Di – Vr</span><span className="text-muted-foreground">09:00 – 18:00</span></li>
-            <li className="flex justify-between"><span>Zaterdag</span><span className="text-muted-foreground">09:00 – 17:00</span></li>
+            <li className="flex justify-between"><span>Di tot Vr</span><span className="text-muted-foreground">09:00 tot 18:00</span></li>
+            <li className="flex justify-between"><span>Zaterdag</span><span className="text-muted-foreground">09:00 tot 17:00</span></li>
             <li className="flex justify-between"><span>Zondag</span><span className="text-muted-foreground">Gesloten</span></li>
           </ul>
         </div>

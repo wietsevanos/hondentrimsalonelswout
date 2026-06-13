@@ -64,7 +64,7 @@ function OverOns() {
               <p>
                 Wij gebruiken uitsluitend natuurlijke verzorgingsproducten en zijn
                 gespecialiseerd in hypoallergene vachten en behandelingen met
-                medische indicatie — altijd in opvolging van advies van de
+                medische indicatie, altijd in opvolging van advies van de
                 dierenarts.
               </p>
               <p>
@@ -113,7 +113,7 @@ function OverOns() {
                 </li>
               ))}
             </ul>
-            <p className="mt-8 text-sm text-muted-foreground">Lid van VVTN — Vereniging voor Trimmend Nederland.</p>
+            <p className="mt-8 text-sm text-muted-foreground">Lid van VVTN, Vereniging voor Trimmend Nederland.</p>
           </Reveal>
         </div>
       </section>
