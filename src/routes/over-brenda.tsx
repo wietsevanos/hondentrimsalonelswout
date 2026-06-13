@@ -49,7 +49,7 @@ function OverBrenda() {
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <Reveal className="md:col-span-5">
             <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-sand">
-              <img src={brenda} alt="Brenda van der Vaart" loading="lazy" className="w-full h-full object-cover" />
+              <img src={brenda.url} alt="Brenda van der Vaart" loading="lazy" className="w-full h-full object-cover" />
             </div>
             <div className="mt-6 rounded-2xl border border-border bg-card p-6">
               <div className="eyebrow mb-2">Functie</div>

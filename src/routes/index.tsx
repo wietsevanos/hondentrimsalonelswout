@@ -256,7 +256,7 @@ function BrendaTeaser() {
       <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-center">
         <Reveal className="md:col-span-5">
           <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-sand">
-            <img src={brendaImg} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
+            <img src={brendaImg.url} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </Reveal>
         <Reveal className="md:col-span-7" delay={1}>
