@@ -27,18 +27,14 @@ function Contact() {
       <PageHero
         eyebrow="Contact & afspraak"
         title={<>Een afspraak begint met een <span className="italic-serif text-terracotta">korte boodschap</span>.</>}
-        intro="Vanwege de drukte zijn wij telefonisch lastig bereikbaar. Een WhatsApp is veruit de snelste manier."
+        intro="Telefonisch zijn wij door de drukte lastig bereikbaar; een WhatsApp is de snelste weg naar een plek in de agenda. Houd rekening met een wachttijd van ongeveer twee maanden."
         align="center"
       />
 
       <section className="container-x mx-auto max-w-5xl mt-16">
         <Reveal>
           <div className="text-center">
-            <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto">
-              Bekend in ons bestand? Stuur een bericht. Houd rekening met een
-              wachttijd van ca. twee maanden.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3 justify-center">
+            <div className="flex flex-wrap gap-3 justify-center">
               <a
                 href="https://wa.me/31642618286"
                 target="_blank"
