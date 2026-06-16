@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import salon from "@/assets/salon-interior.jpg";
 import wash from "@/assets/treatment-wash.jpg";
+import salonVideo from "@/assets/salon-visie.mp4.asset.json";
 
 const TITLE = "Over ons · Hondentrimsalon Elswout Haarlem";
 const DESC =
@@ -46,7 +46,14 @@ function OverOns() {
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <Reveal className="md:col-span-6">
             <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-sand">
-              <img src={salon} alt="Het interieur van onze trimsalon" loading="lazy" className="w-full h-full object-cover" />
+              <video
+                src={salonVideo.url}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
           </Reveal>
           <Reveal className="md:col-span-6 md:pt-10" delay={1}>
