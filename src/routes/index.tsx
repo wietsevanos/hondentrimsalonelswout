@@ -3,10 +3,14 @@ import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import heroImg from "@/assets/hero-doodle-brown.png.asset.json";
 import salonImg from "@/assets/salon-interior.jpg";
-import berneImg from "@/assets/portrait-bernedoodle.jpg";
-import pomImg from "@/assets/portrait-pomeranian.jpg";
-import cavaImg from "@/assets/portrait-cavapoo.jpg";
-import bernerImg from "@/assets/portrait-berner.jpg";
+import doodleAsset from "@/assets/doodle.png.asset.json";
+import huskyAsset from "@/assets/husky.png.asset.json";
+import pomAsset from "@/assets/pomeranian.png.asset.json";
+import goldenAsset from "@/assets/golden-retriever.png.asset.json";
+const cavaImg = doodleAsset.url;
+const bernerImg = huskyAsset.url;
+const pomImg = pomAsset.url;
+const berneImg = goldenAsset.url;
 import brendaImg from "@/assets/brenda-shop.jpg.asset.json";
 
 const TITLE = "Hondentrimsalon Elswout · Premium vachtverzorging in Haarlem";
