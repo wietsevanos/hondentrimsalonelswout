@@ -30,7 +30,7 @@ function Home() {
         <meta property="og:type" content={"website"} />
         <meta property="og:url" content={"/"} />
         <meta name="twitter:card" content={"summary_large_image"} />
-        <meta name="keywords" content={"hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede",} />
+        <meta name="keywords" content={"hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede"} />
       </Helmet>
       
       <Hero />
