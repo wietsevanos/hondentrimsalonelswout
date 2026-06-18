@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 
@@ -7,20 +7,7 @@ const TITLE = "Tarieven · Hondentrimsalon Elswout Haarlem";
 const DESC =
   "Transparante uurtarieven voor vachtverzorging in Haarlem. Inclusief 21% BTW. Standaardbehandeling, plukvachten, medische indicatie en specialistische behandelingen.";
 
-export const Route = createFileRoute("/tarieven")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/tarieven" },
-    ],
-    links: [{ rel: "canonical", href: "/tarieven" }],
-  }),
-  component: Tarieven,
-});
+
 
 const RATES = [
   { t: "Korte behandeling", d: "Ca. 1 uur, voor kleine of goed verzorgde vachten.", p: "€ 65,00" },
@@ -43,6 +30,15 @@ const TERMS = [
 function Tarieven() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/tarieven"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Tarieven"
         title={<>Eerlijke <span className="italic-serif text-terracotta">uurtarieven</span>, geen verrassingen.</>}
@@ -88,3 +84,5 @@ function Tarieven() {
     </>
   );
 }
+
+export default Tarieven;

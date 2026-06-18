@@ -1,46 +1,39 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Reveal } from "@/components/site/Reveal";
+import { Helmet } from "react-helmet-async";
 import { CTASection } from "@/components/site/CTASection";
-import heroImg from "@/assets/hero-doodle-brown.png.asset.json";
+import heroImg from "@/assets/hero-doodle-brown.png";
 import salonImg from "@/assets/salon-interior.jpg";
-import doodleAsset from "@/assets/doodle.png.asset.json";
-import huskyAsset from "@/assets/husky.png.asset.json";
-import pomAsset from "@/assets/pomeranian.png.asset.json";
-import goldenAsset from "@/assets/golden-retriever.png.asset.json";
-const cavaImg = doodleAsset.url;
-const bernerImg = huskyAsset.url;
-const pomImg = pomAsset.url;
-const berneImg = goldenAsset.url;
-import brendaImg from "@/assets/brenda-shop.jpg.asset.json";
+import doodleAsset from "@/assets/doodle.png";
+import huskyAsset from "@/assets/husky.png";
+import pomAsset from "@/assets/pomeranian.png";
+import goldenAsset from "@/assets/golden-retriever.png";
+const cavaImg = doodleAsset;
+const bernerImg = huskyAsset;
+const pomImg = pomAsset;
+const berneImg = goldenAsset;
+import brendaImg from "@/assets/brenda-shop.jpg";
 
 const TITLE = "Hondentrimsalon Elswout · Premium vachtverzorging in Haarlem";
 const DESC =
   "Gediplomeerd specialist in doodle-, pluk- en wolvachten. Natuurlijke, persoonlijke vachtverzorging in Haarlem, Overveen en omstreken. Boek via WhatsApp.";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "keywords",
-        content:
-          "hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-  component: Home,
-});
+
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/"} />
+        <meta name="twitter:card" content={"summary_large_image"} />
+        <meta name="keywords" content={"hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede"} />
+      </Helmet>
+      
       <Hero />
       <Specializations />
       <BrendaTeaser />
@@ -84,7 +77,7 @@ function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-clay/40">
               <img
-                src={heroImg.url}
+                src={heroImg}
                 alt="Witte hond wordt rustig getrimd in trimsalon Elswout"
                 className="w-full h-full object-cover"
               />
@@ -260,7 +253,7 @@ function BrendaTeaser() {
       <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-center">
         <Reveal className="md:col-span-5">
           <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-sand">
-            <img src={brendaImg.url} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
+            <img src={brendaImg} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </Reveal>
         <Reveal className="md:col-span-7" delay={1}>
@@ -359,3 +352,5 @@ function JsonLd() {
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
+
+export default Home;

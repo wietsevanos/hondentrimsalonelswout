@@ -1,28 +1,15 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import salonVideo from "@/assets/salon-visie.mp4.asset.json";
-import certPuppy from "@/assets/bernedoodle-puppy.png.asset.json";
+const salonVideo = { url: "/salon-visie.mp4" };
+import certPuppy from "@/assets/bernedoodle-puppy.png";
 
 const TITLE = "Over ons · Hondentrimsalon Elswout Haarlem";
 const DESC =
   "Gediplomeerde vachtspecialist met paraveterinaire achtergrond in hartje Haarlem. Natuurlijke verzorging, internationale expertise en oprechte aandacht voor jouw hond.";
 
-export const Route = createFileRoute("/over-ons")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/over-ons" },
-    ],
-    links: [{ rel: "canonical", href: "/over-ons" }],
-  }),
-  component: OverOns,
-});
+
 
 const VALUES = [
   { t: "Deskundig", d: "Internationale opleidingen en jarenlange paraveterinaire ervaring." },
@@ -36,6 +23,15 @@ const VALUES = [
 function OverOns() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/over-ons"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Over Hondentrimsalon Elswout"
         title={<>Vachtverzorging als <span className="italic-serif text-terracotta">vakmanschap</span>.</>}
@@ -105,7 +101,7 @@ function OverOns() {
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <Reveal className="md:col-span-6 md:order-2">
             <div className="overflow-hidden rounded-[2rem] aspect-[5/4] bg-sand">
-              <img src={certPuppy.url} alt="Berner Sennen pup in het gras" loading="lazy" className="w-full h-full object-cover" />
+              <img src={certPuppy} alt="Berner Sennen pup in het gras" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal className="md:col-span-6" delay={1}>
@@ -129,3 +125,5 @@ function OverOns() {
     </>
   );
 }
+
+export default OverOns;

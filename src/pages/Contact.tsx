@@ -1,29 +1,25 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 
 const TITLE = "Contact · Hondentrimsalon Elswout Haarlem";
 const DESC =
   "Maak een afspraak bij Hondentrimsalon Elswout. Vanwege de drukte heeft WhatsApp de voorkeur. Ramplaan 48 te Haarlem, op de grens van Overveen.";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/contact" },
-    ],
-    links: [{ rel: "canonical", href: "/contact" }],
-  }),
-  component: Contact,
-});
+
 
 function Contact() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/contact"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Contact & afspraak"
         title={<>Een afspraak begint met een <span className="italic-serif text-terracotta">korte boodschap</span>.</>}
@@ -112,3 +108,5 @@ function Contact() {
     </>
   );
 }
+
+export default Contact;

@@ -1,5 +1,5 @@
-import { Link } from "@tanstack/react-router";
-import logo from "@/assets/elswout-logo.png.asset.json";
+import { Link } from "react-router-dom";
+import logo from "@/assets/elswout-logo.png";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container-x mx-auto max-w-7xl py-20 grid gap-14 md:grid-cols-4">
         <div className="md:col-span-2 max-w-md">
           <div className="flex items-center gap-4">
-            <img src={logo.url} alt="Elswout" width={56} height={56} className="h-14 w-14 object-contain" />
+            <img src={logo} alt="Elswout" width={56} height={56} className="h-14 w-14 object-contain" />
             <div className="font-serif text-2xl text-bark leading-tight">Hondentrimsalon<br />Elswout</div>
           </div>
           <p className="mt-4 text-muted-foreground leading-relaxed">

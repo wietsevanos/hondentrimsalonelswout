@@ -1,36 +1,23 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import doodleAsset from "@/assets/doodle.png.asset.json";
-import huskyAsset from "@/assets/husky.png.asset.json";
-import pomAsset from "@/assets/pomeranian.png.asset.json";
-import goldenAsset from "@/assets/golden-retriever.png.asset.json";
+import doodleAsset from "@/assets/doodle.png";
+import huskyAsset from "@/assets/husky.png";
+import pomAsset from "@/assets/pomeranian.png";
+import goldenAsset from "@/assets/golden-retriever.png";
 import strip from "@/assets/treatment-handstrip.jpg";
 import berne from "@/assets/portrait-bernedoodle.jpg";
-const cava = doodleAsset.url;
-const wash = huskyAsset.url;
-const pom = pomAsset.url;
-const berner = goldenAsset.url;
+const cava = doodleAsset;
+const wash = huskyAsset;
+const pom = pomAsset;
+const berner = goldenAsset;
 
 const TITLE = "Specialisaties · Doodle, pluk- en wolvachten Haarlem";
 const DESC =
   "Gecertificeerde specialist in Labradoodle, Cobberdog, Bernedoodle, Cavapoo en Cockapoo. Ervaring met wolvachten, plukvachten, grote rassen, Pomeranian en allergische vachten.";
 
-export const Route = createFileRoute("/specialisaties")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/specialisaties" },
-    ],
-    links: [{ rel: "canonical", href: "/specialisaties" }],
-  }),
-  component: Specialisaties,
-});
+
 
 type Spec = {
   id: string;
@@ -95,6 +82,15 @@ const SPECS: Spec[] = [
 function Specialisaties() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/specialisaties"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Specialisaties"
         title={<>Specialistische kennis van <span className="italic-serif text-terracotta">elk vachttype</span>.</>}
@@ -131,3 +127,5 @@ function Specialisaties() {
     </>
   );
 }
+
+export default Specialisaties;
