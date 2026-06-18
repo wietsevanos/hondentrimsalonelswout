@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/site/PageHero";
-import { Helmet } from "react-helmet-async";
+
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import doodleAsset from "@/assets/doodle.png";
@@ -82,14 +82,14 @@ const SPECS: Spec[] = [
 function Specialisaties() {
   return (
     <>
-      <Helmet>
+      <>
         <title>{TITLE}</title>
         <meta name="description" content={DESC} />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESC} />
         <meta property="og:type" content={"website"} />
         <meta property="og:url" content={"/specialisaties"} />
-      </Helmet>
+      </>
       
       <PageHero
         eyebrow="Specialisaties"

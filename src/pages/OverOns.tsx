@@ -1,5 +1,5 @@
 import { PageHero } from "@/components/site/PageHero";
-import { Helmet } from "react-helmet-async";
+
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 const salonVideo = { url: "/salon-visie.mp4" };
@@ -23,14 +23,14 @@ const VALUES = [
 function OverOns() {
   return (
     <>
-      <Helmet>
+      <>
         <title>{TITLE}</title>
         <meta name="description" content={DESC} />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESC} />
         <meta property="og:type" content={"website"} />
         <meta property="og:url" content={"/over-ons"} />
-      </Helmet>
+      </>
       
       <PageHero
         eyebrow="Over Hondentrimsalon Elswout"
