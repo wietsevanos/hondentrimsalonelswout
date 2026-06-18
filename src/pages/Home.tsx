@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Reveal } from "@/components/site/Reveal";
-import { Helmet } from "react-helmet-async";
+
 import { CTASection } from "@/components/site/CTASection";
 import heroImg from "@/assets/hero-doodle-brown.png";
 import salonImg from "@/assets/salon-interior.jpg";
@@ -23,7 +23,7 @@ const DESC =
 function Home() {
   return (
     <>
-      <Helmet>
+      <>
         <title>{TITLE}</title>
         <meta name="description" content={DESC} />
         <meta property="og:title" content={TITLE} />
@@ -32,7 +32,7 @@ function Home() {
         <meta property="og:url" content={"/"} />
         <meta name="twitter:card" content={"summary_large_image"} />
         <meta name="keywords" content={"hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede"} />
-      </Helmet>
+      </>
       
       <Hero />
       <Specializations />

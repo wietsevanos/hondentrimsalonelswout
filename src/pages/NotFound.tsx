@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 
 export default function NotFound() {
   return (
     <>
-      <Helmet>
+      <>
         <title>Pagina niet gevonden · Hondentrimsalon Elswout</title>
         <meta name="robots" content="noindex" />
-      </Helmet>
+      </>
       <div className="flex min-h-[60vh] items-center justify-center bg-background px-4">
         <div className="max-w-md text-center">
           <h1 className="font-serif text-7xl text-bark">404</h1>
