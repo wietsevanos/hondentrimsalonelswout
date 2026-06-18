@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/elswout-logo.png";
@@ -50,14 +50,17 @@ export function Header() {
 
         <nav className="hidden lg:flex items-center gap-9">
           {NAV.map((n) => (
-            <Link
+            <NavLink
               key={n.to}
               to={n.to}
-              className="text-[0.78rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-bark transition-colors"
-              activeProps={{ className: "text-bark" }}
+              className={({ isActive }) =>
+                `text-[0.78rem] uppercase tracking-[0.18em] hover:text-bark transition-colors ${
+                  isActive ? "text-bark" : "text-muted-foreground"
+                }`
+              }
             >
               {n.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
