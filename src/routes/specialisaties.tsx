@@ -2,12 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import cava from "@/assets/portrait-cavapoo.jpg";
-import berner from "@/assets/portrait-berner.jpg";
-import berne from "@/assets/portrait-bernedoodle.jpg";
-import pom from "@/assets/portrait-pomeranian.jpg";
+import doodleAsset from "@/assets/doodle.png.asset.json";
+import huskyAsset from "@/assets/husky.png.asset.json";
+import pomAsset from "@/assets/pomeranian.png.asset.json";
+import goldenAsset from "@/assets/golden-retriever.png.asset.json";
 import strip from "@/assets/treatment-handstrip.jpg";
-import wash from "@/assets/treatment-wash.jpg";
+import berne from "@/assets/portrait-bernedoodle.jpg";
+const cava = doodleAsset.url;
+const wash = huskyAsset.url;
+const pom = pomAsset.url;
+const berner = goldenAsset.url;
 
 const TITLE = "Specialisaties · Doodle, pluk- en wolvachten Haarlem";
 const DESC =
