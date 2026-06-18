@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Reveal } from "@/components/site/Reveal";
 import { Helmet } from "react-helmet-async";
 import { CTASection } from "@/components/site/CTASection";
