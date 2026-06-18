@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import procesTrimmer from "@/assets/proces-trimmer.png";
@@ -8,20 +9,7 @@ const TITLE = "Behandelingen · Hondentrimsalon Elswout Haarlem";
 const DESC =
   "Wassen, drogen, knippen, scheren, modelleren, plukken en anti-verharing. Iedere behandeling met natuurlijke producten en check op huid, oren en nagels.";
 
-export const Route = createFileRoute("/behandelingen")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/behandelingen" },
-    ],
-    links: [{ rel: "canonical", href: "/behandelingen" }],
-  }),
-  component: Behandelingen,
-});
+
 
 const TREATMENTS = [
   { t: "Wassen & drogen", d: "Twee wasbeurten met natuurlijke shampoo, gevolgd door drogen met een krachtige of zachte waterblazer afhankelijk van het vachttype." },
@@ -46,6 +34,15 @@ const PROCESS = [
 function Behandelingen() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/behandelingen"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Onze behandelingen"
         title={<>Een complete behandeling, <span className="italic-serif text-terracotta">afgestemd</span> op jouw hond.</>}
@@ -104,3 +101,5 @@ function Behandelingen() {
     </>
   );
 }
+
+export default Behandelingen;

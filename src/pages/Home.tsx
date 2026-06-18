@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/site/Reveal";
+import { Helmet } from "react-helmet-async";
 import { CTASection } from "@/components/site/CTASection";
 import heroImg from "@/assets/hero-doodle-brown.png";
 import salonImg from "@/assets/salon-interior.jpg";
@@ -16,30 +17,22 @@ const TITLE = "Hondentrimsalon Elswout · Premium vachtverzorging in Haarlem";
 const DESC =
   "Gediplomeerd specialist in doodle-, pluk- en wolvachten. Natuurlijke, persoonlijke vachtverzorging in Haarlem, Overveen en omstreken. Boek via WhatsApp.";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "keywords",
-        content:
-          "hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede",
-      },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-  component: Home,
-});
+
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/"} />
+        <meta name="twitter:card" content={"summary_large_image"} />
+        <meta name="keywords" content={"hondentrimsalon Haarlem, hondentrimsalon Overveen, labradoodle trimmen Haarlem, doodle trimsalon, plukvacht specialist, wolvacht specialist, hond trimmen Bloemendaal Heemstede",} />
+      </Helmet>
+      
       <Hero />
       <Specializations />
       <BrendaTeaser />
@@ -358,3 +351,5 @@ function JsonLd() {
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
+
+export default Home;

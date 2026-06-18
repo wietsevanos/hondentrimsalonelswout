@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 const salonVideo = { url: "/salon-visie.mp4" };
@@ -8,20 +9,7 @@ const TITLE = "Over ons · Hondentrimsalon Elswout Haarlem";
 const DESC =
   "Gediplomeerde vachtspecialist met paraveterinaire achtergrond in hartje Haarlem. Natuurlijke verzorging, internationale expertise en oprechte aandacht voor jouw hond.";
 
-export const Route = createFileRoute("/over-ons")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/over-ons" },
-    ],
-    links: [{ rel: "canonical", href: "/over-ons" }],
-  }),
-  component: OverOns,
-});
+
 
 const VALUES = [
   { t: "Deskundig", d: "Internationale opleidingen en jarenlange paraveterinaire ervaring." },
@@ -35,6 +23,15 @@ const VALUES = [
 function OverOns() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/over-ons"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Over Hondentrimsalon Elswout"
         title={<>Vachtverzorging als <span className="italic-serif text-terracotta">vakmanschap</span>.</>}
@@ -128,3 +125,5 @@ function OverOns() {
     </>
   );
 }
+
+export default OverOns;

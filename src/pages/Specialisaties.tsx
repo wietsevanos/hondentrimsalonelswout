@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/site/PageHero";
+import { Helmet } from "react-helmet-async";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import doodleAsset from "@/assets/doodle.png";
@@ -16,20 +17,7 @@ const TITLE = "Specialisaties · Doodle, pluk- en wolvachten Haarlem";
 const DESC =
   "Gecertificeerde specialist in Labradoodle, Cobberdog, Bernedoodle, Cavapoo en Cockapoo. Ervaring met wolvachten, plukvachten, grote rassen, Pomeranian en allergische vachten.";
 
-export const Route = createFileRoute("/specialisaties")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/specialisaties" },
-    ],
-    links: [{ rel: "canonical", href: "/specialisaties" }],
-  }),
-  component: Specialisaties,
-});
+
 
 type Spec = {
   id: string;
@@ -94,6 +82,15 @@ const SPECS: Spec[] = [
 function Specialisaties() {
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+        <meta name="description" content={DESC} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESC} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:url" content={"/specialisaties"} />
+      </Helmet>
+      
       <PageHero
         eyebrow="Specialisaties"
         title={<>Specialistische kennis van <span className="italic-serif text-terracotta">elk vachttype</span>.</>}
@@ -130,3 +127,5 @@ function Specialisaties() {
     </>
   );
 }
+
+export default Specialisaties;
