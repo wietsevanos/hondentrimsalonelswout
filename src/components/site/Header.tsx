@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/elswout-logo.png.asset.json";
+import logo from "@/assets/elswout-logo.png";
 
 const NAV = [
   { to: "/over-ons", label: "Over ons" },
@@ -32,7 +32,7 @@ export function Header() {
       <div className="container-x mx-auto max-w-7xl flex items-center justify-between h-20">
         <Link to="/" className="group flex items-center gap-3" aria-label="Home">
           <img
-            src={logo.url}
+            src={logo}
             alt="Elswout"
             width={44}
             height={44}

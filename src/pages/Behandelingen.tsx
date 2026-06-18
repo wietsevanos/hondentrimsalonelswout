@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import procesTrimmer from "@/assets/proces-trimmer.png.asset.json";
-import procesSchaar from "@/assets/proces-schaar.png.asset.json";
+import procesTrimmer from "@/assets/proces-trimmer.png";
+import procesSchaar from "@/assets/proces-schaar.png";
 
 const TITLE = "Behandelingen · Hondentrimsalon Elswout Haarlem";
 const DESC =
@@ -78,10 +78,10 @@ function Behandelingen() {
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="overflow-hidden rounded-2xl aspect-square bg-sand">
-                <img src={procesTrimmer.url} alt="Trimmen met tondeuse" loading="lazy" className="w-full h-full object-cover" />
+                <img src={procesTrimmer} alt="Trimmen met tondeuse" loading="lazy" className="w-full h-full object-cover" />
               </div>
               <div className="overflow-hidden rounded-2xl aspect-square bg-sand mt-8">
-                <img src={procesSchaar.url} alt="Modelleren met schaar" loading="lazy" className="w-full h-full object-cover" />
+                <img src={procesSchaar} alt="Modelleren met schaar" loading="lazy" className="w-full h-full object-cover" />
               </div>
             </div>
           </Reveal>

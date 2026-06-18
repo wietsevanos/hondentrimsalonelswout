@@ -1,17 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import heroImg from "@/assets/hero-doodle-brown.png.asset.json";
+import heroImg from "@/assets/hero-doodle-brown.png";
 import salonImg from "@/assets/salon-interior.jpg";
-import doodleAsset from "@/assets/doodle.png.asset.json";
-import huskyAsset from "@/assets/husky.png.asset.json";
-import pomAsset from "@/assets/pomeranian.png.asset.json";
-import goldenAsset from "@/assets/golden-retriever.png.asset.json";
-const cavaImg = doodleAsset.url;
-const bernerImg = huskyAsset.url;
-const pomImg = pomAsset.url;
-const berneImg = goldenAsset.url;
-import brendaImg from "@/assets/brenda-shop.jpg.asset.json";
+import doodleAsset from "@/assets/doodle.png";
+import huskyAsset from "@/assets/husky.png";
+import pomAsset from "@/assets/pomeranian.png";
+import goldenAsset from "@/assets/golden-retriever.png";
+const cavaImg = doodleAsset;
+const bernerImg = huskyAsset;
+const pomImg = pomAsset;
+const berneImg = goldenAsset;
+import brendaImg from "@/assets/brenda-shop.jpg";
 
 const TITLE = "Hondentrimsalon Elswout · Premium vachtverzorging in Haarlem";
 const DESC =
@@ -84,7 +84,7 @@ function Hero() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-clay/40">
               <img
-                src={heroImg.url}
+                src={heroImg}
                 alt="Witte hond wordt rustig getrimd in trimsalon Elswout"
                 className="w-full h-full object-cover"
               />
@@ -260,7 +260,7 @@ function BrendaTeaser() {
       <div className="grid md:grid-cols-12 gap-10 lg:gap-16 items-center">
         <Reveal className="md:col-span-5">
           <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-sand">
-            <img src={brendaImg.url} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
+            <img src={brendaImg} alt="Brenda van der Vaart, vachtspecialist" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </Reveal>
         <Reveal className="md:col-span-7" delay={1}>

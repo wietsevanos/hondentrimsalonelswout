@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
-import salonVideo from "@/assets/salon-visie.mp4.asset.json";
-import certPuppy from "@/assets/bernedoodle-puppy.png.asset.json";
+const salonVideo = { url: "/salon-visie.mp4" };
+import certPuppy from "@/assets/bernedoodle-puppy.png";
 
 const TITLE = "Over ons · Hondentrimsalon Elswout Haarlem";
 const DESC =
@@ -105,7 +105,7 @@ function OverOns() {
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <Reveal className="md:col-span-6 md:order-2">
             <div className="overflow-hidden rounded-[2rem] aspect-[5/4] bg-sand">
-              <img src={certPuppy.url} alt="Berner Sennen pup in het gras" loading="lazy" className="w-full h-full object-cover" />
+              <img src={certPuppy} alt="Berner Sennen pup in het gras" loading="lazy" className="w-full h-full object-cover" />
             </div>
           </Reveal>
           <Reveal className="md:col-span-6" delay={1}>
